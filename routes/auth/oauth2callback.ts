@@ -7,8 +7,11 @@ import { client } from "@/utils/kv_oauth.ts";
 
 export const handler: Handlers = {
   async GET(req) {
-    const { response, tokens, sessionId } = await handleCallback(req, client);
-    const ghUser = await getAuthenticatedUser(tokens!.accessToken);
+    const { response, accessToken, sessionId } = await handleCallback(
+      req,
+      client,
+    );
+    const ghUser = await getAuthenticatedUser(accessToken);
 
     const user: User = {
       id: String(ghUser.id),

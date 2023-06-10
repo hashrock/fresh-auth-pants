@@ -1,7 +1,7 @@
 {
   "imports": {
     "@/": "./",
-    "kv_oauth": "https://deno.land/x/deno_kv_oauth@v0.1.6-beta/mod.ts",
+    "kv_oauth": "https://deno.land/x/deno_kv_oauth@v0.1.8-beta/mod.ts",
 
     "$fresh/": "https://deno.land/x/fresh@1.1.6/",
     "preact": "https://esm.sh/preact@10.13.1",
