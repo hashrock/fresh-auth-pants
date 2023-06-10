@@ -1,8 +1,7 @@
 import { Handlers } from "$fresh/server.ts";
-import { setUserWithSession } from "@/utils/db.ts";
+import { setUserWithSession, User } from "@/utils/users.ts";
 import { getAuthenticatedUser } from "@/utils/github.ts";
 import { handleCallback } from "kv_oauth";
-import { User } from "@/utils/types.ts";
 import { client } from "@/utils/kv_oauth.ts";
 
 export const handler: Handlers = {

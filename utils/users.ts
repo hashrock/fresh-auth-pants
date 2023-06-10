@@ -1,10 +1,9 @@
-/**
- * This module implements the DB layer for the Tic Tac Toe game. It uses Deno's
- * key-value store to store data, and uses BroadcastChannel to perform real-time
- * synchronization between clients.
- */
-
-import { User } from "./types.ts";
+export interface User {
+  id: string;
+  login: string;
+  name: string;
+  avatarUrl: string;
+}
 
 const kv = await Deno.openKv();
 

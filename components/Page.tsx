@@ -1,5 +1,5 @@
 import { JSX } from "preact";
-import { User } from "@/utils/types.ts";
+import { User } from "@/utils/users.ts";
 
 interface PageProps extends JSX.HTMLAttributes<HTMLDivElement> {
   user?: User;

@@ -2,8 +2,8 @@ import { Head } from "$fresh/runtime.ts";
 import { Page } from "@/components/Page.tsx";
 import { HandlerContext, PageProps } from "$fresh/server.ts";
 
-import { State, User } from "@/utils/types.ts";
-import { getUserBySession } from "@/utils/db.ts";
+import { State } from "@/utils/kv_oauth.ts";
+import { getUserBySession, User } from "@/utils/users.ts";
 
 interface Data {
   user?: User;
